@@ -2,6 +2,16 @@
 
 {{/if}} --}}
 <div class="comment container small">
-   <script defer src="https://commento.bumpydetour.com/js/commento.js" data-no-fonts="true" data-css-override="{{asset "css/general/commento.css"}}"></script>
-   <div id="commento"></div>
+   <div id='discourse-comments'></div>
+
+<script type="text/javascript">
+  DiscourseEmbed = { discourseUrl: 'https://community.bumpydetour.com/',
+                     discourseEmbedUrl: '{{url absolute="true"}}' };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
 </div>
